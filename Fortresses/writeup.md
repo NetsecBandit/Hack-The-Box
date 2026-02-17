@@ -14,8 +14,8 @@
 
 ```bash
 nmap -sC -sV -T4 10.10.10.10
+```
 
-```text
 Port 22 — SSH
 
 Port 80 — HTTP (Apache 2.4.x)
